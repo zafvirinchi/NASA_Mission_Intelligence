@@ -328,3 +328,13 @@ When submitting your completed project:
 ---
 
 **Good luck with your RAG system implementation!** This project will give you hands-on experience with modern AI application development, from data processing to user interface design. Take your time with each component and don't hesitate to experiment with different approaches and parameters.
+
+
+
+$env:OPENAI_API_KEY="voc-your-key"
+
+python embedding_pipeline.py --openai-key "$env:OPENAI_API_KEY" --data-path ./data_small --chroma-dir ./chroma_db_openai --collection-name nasa_space_missions_text --chunk-size 3000 --chunk-overlap 100 --update-mode skip
+
+streamlit run chat.py --server.fileWatcherType none
+
+Vocareum base URL used: https://openai.vocareum.com/v1

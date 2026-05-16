@@ -11,5 +11,42 @@ def generate_response(openai_key: str, user_message: str, context: str,
     # TODO: Creaet OpenAI Client
     # TODO: Send request to OpenAI
     # TODO: Return response
+    if not openai_key:
+        return "OpenAI API key is missing."
 
-    pass
+    client = OpenAI(
+        api_key=openai_key,
+        base_url="https://openai.vocareum.com/v1"
+    )
+
+    system_prompt = """
+You are a NASA mission intelligence assistant.
+Answer questions only using the provided NASA mission context.
+If the context does not contain enough information, say that the available context is insufficient.
+Be accurate, clear, and cite source names when available in the context.
+"""
+
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {
+            "role": "system",
+            "content": f"NASA retrieved context:\n\n{context if context else 'No context retrieved.'}"
+        }
+    ]
+
+    if conversation_history:
+        messages.extend(conversation_history[-6:])
+
+    messages.append({"role": "user", "content": user_message})
+
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=messages,
+            temperature=0.2,
+            max_tokens=900
+        )
+        return response.choices[0].message.content.strip()
+
+    except Exception as e:
+        return f"Error generating response: {e}"
