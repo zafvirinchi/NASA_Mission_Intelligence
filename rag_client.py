@@ -2,6 +2,7 @@ import os
 from openai import OpenAI
 import chromadb
 from chromadb.config import Settings
+from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
 from typing import Dict, List, Optional
 from pathlib import Path
 
@@ -9,6 +10,11 @@ from pathlib import Path
 VOCAREUM_BASE_URL = "https://openai.vocareum.com/v1"
 EMBEDDING_MODEL = "text-embedding-3-small"
 
+
+def get_openai_base_url(api_key: str):
+    if api_key and api_key.startswith("voc"):
+        return "https://openai.vocareum.com/v1"
+    return None
 
 def discover_chroma_backends() -> Dict[str, Dict[str, str]]:
     """Discover available ChromaDB backends in the project directory"""
@@ -60,9 +66,9 @@ def discover_chroma_backends() -> Dict[str, Dict[str, str]]:
                 # TODO: Get document count with fallback for unsupported operations
                 try:
                     collection_obj = client.get_collection(name=collection_name)
-                    document_count = "unknown"
+                    document_count = str(collection_obj.count())
                 except Exception:
-                    document_count = 0
+                    document_count = "unknown"
 
                 # TODO: Add collection information to backends dictionary
                 backends[backend_key] = {
@@ -100,13 +106,15 @@ def discover_chroma_backends() -> Dict[str, Dict[str, str]]:
 def initialize_rag_system(chroma_dir: str, collection_name: str):
     """Initialize the RAG system with specified backend (cached for performance)"""
 
-    if not chroma_dir:
-        raise ValueError("ChromaDB directory is missing.")
+    api_key = os.getenv("OPENAI_API_KEY")
+    base_url = get_openai_base_url(api_key)
 
-    if not collection_name:
-        raise ValueError("ChromaDB collection name is missing.")
+    embedding_function = OpenAIEmbeddingFunction(
+        api_key=api_key,
+        model_name="text-embedding-3-small",
+        api_base=base_url
+    )
 
-    # TODO: Create a chomadb persistentclient
     client = chromadb.PersistentClient(
         path=chroma_dir,
         settings=Settings(
@@ -115,138 +123,86 @@ def initialize_rag_system(chroma_dir: str, collection_name: str):
         )
     )
 
-    # TODO: Return the collection with the collection_name
-    collection = client.get_collection(name=collection_name)
+    collection = client.get_collection(
+        name=collection_name,
+        embedding_function=embedding_function
+    )
 
     return collection
 
-
 def create_query_embedding(query: str) -> List[float]:
-    """Create query embedding using Vocareum/OpenAI instead of ChromaDB default ONNX"""
-
-    openai_key = os.getenv("OPENAI_API_KEY")
-
-    if not openai_key:
-        raise ValueError("OPENAI_API_KEY is missing. Please set it before querying.")
+    api_key = os.getenv("OPENAI_API_KEY")
+    base_url = get_openai_base_url(api_key)
 
     client = OpenAI(
-        api_key=openai_key,
-        base_url=VOCAREUM_BASE_URL
+        api_key=api_key,
+        base_url=base_url
     )
 
     response = client.embeddings.create(
-        model=EMBEDDING_MODEL,
+        model="text-embedding-3-small",
         input=query
     )
 
     return response.data[0].embedding
 
-
-def retrieve_documents(
-    collection,
-    query: str,
-    n_results: int = 3,
-    mission_filter: Optional[str] = None
-) -> Optional[Dict]:
+def retrieve_documents(collection, query: str, n_results: int = 3,
+                      mission_filter: Optional[str] = None) -> Optional[Dict]:
     """Retrieve relevant documents from ChromaDB with optional filtering"""
 
-    if not query or not query.strip():
-        raise ValueError("Query cannot be empty.")
-
-    # TODO: Initialize filter variable to None (represents no filtering)
     where_filter = None
 
-    # TODO: Check if filter parameter exists and is not set to "all" or equivalent
-    # TODO: If filter conditions are met, create filter dictionary with appropriate field-value pairs
     if mission_filter and mission_filter.lower() not in ["all", "any", "none", ""]:
         where_filter = {"mission": mission_filter}
 
-    # Create OpenAI/Vocareum query embedding manually.
-    # This avoids ChromaDB default ONNX embedding and fixes onnxruntime errors.
     query_embedding = create_query_embedding(query)
 
-    # TODO: Execute database query with the following parameters:
-    # TODO: Pass search query in the required format
-    # TODO: Set maximum number of results to return
-    # TODO: Apply conditional filter (None for no filtering, dictionary for specific filtering)
-    if where_filter:
-        results = collection.query(
-            query_embeddings=[query_embedding],
-            n_results=n_results,
-            where=where_filter
-        )
-    else:
-        results = collection.query(
-            query_embeddings=[query_embedding],
-            n_results=n_results
-        )
+    results = collection.query(
+        query_embeddings=[query_embedding],
+        n_results=n_results,
+        where=where_filter
+    )
 
-    # TODO: Return query results to caller
     return results
 
 
-def format_context(documents: List[str], metadatas: List[Dict]) -> str:
-    """Format retrieved documents into context"""
+def format_context(documents, metadatas):
+    """
+    Format retrieved documents into structured context for the LLM.
+    """
+
     if not documents:
         return ""
 
-    if not metadatas:
-        metadatas = [{} for _ in documents]
+    formatted_sections = []
 
-    # TODO: Initialize list with header text for context section
-    context_parts = ["Retrieved NASA Mission Context:"]
+    seen_docs = set()
 
-    seen_documents = set()
+    for i, doc in enumerate(documents):
+        metadata = metadatas[i] if i < len(metadatas) else {}
 
-    # TODO: Loop through paired documents and their metadata using enumeration
-    for index, (document, metadata) in enumerate(zip(documents, metadatas), start=1):
-
-        if not document:
-            continue
-
-        if metadata is None:
-            metadata = {}
-
-        cleaned_document = document.strip()
-
-        if cleaned_document in seen_documents:
-            continue
-
-        seen_documents.add(cleaned_document)
-
-        # TODO: Extract mission information from metadata with fallback value
         mission = metadata.get("mission", "unknown")
+        source = metadata.get("source", "unknown_source")
+        file_path = metadata.get("file_path", "unknown_path")
 
-        # TODO: Clean up mission name formatting (replace underscores, capitalize)
-        mission = str(mission).replace("_", " ").title()
+        # Deduplicate repeated chunks
+        dedupe_key = f"{mission}_{source}_{doc[:100]}"
 
-        # TODO: Extract source information from metadata with fallback value
-        source = metadata.get("source", metadata.get("filepath", metadata.get("file_path", "unknown")))
+        if dedupe_key in seen_docs:
+            continue
 
-        # TODO: Extract category information from metadata with fallback value
-        category = metadata.get("document_category", metadata.get("category", "general"))
+        seen_docs.add(dedupe_key)
 
-        # TODO: Clean up category name formatting (replace underscores, capitalize)
-        category = str(category).replace("_", " ").title()
+        formatted_section = f"""
+==============================
+MISSION: {mission}
+SOURCE: {source}
+FILE: {file_path}
+==============================
 
-        # TODO: Create formatted source header with index number and extracted information
-        source_header = (
-            f"\n--- Source {index} ---\n"
-            f"Mission: {mission}\n"
-            f"Category: {category}\n"
-            f"Source: {source}\n"
-        )
+{doc}
+"""
 
-        # TODO: Add source header to context parts list
-        context_parts.append(source_header)
+        formatted_sections.append(formatted_section)
 
-        # TODO: Check document length and truncate if necessary
-        max_document_length = 1800
-        if len(cleaned_document) > max_document_length:
-            cleaned_document = cleaned_document[:max_document_length] + "..."
-
-        # TODO: Add truncated or full document content to context parts list
-        context_parts.append(cleaned_document)
-
-    # TODO: Join all context parts with newlines and return formatted string
-    return "\n".join(context_parts)
+    return "\n\n".join(formatted_sections)

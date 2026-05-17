@@ -1,0 +1,30 @@
+[
+  {
+    "category": "overview",
+    "question": "What was the main objective of Apollo 11?"
+  },
+  {
+    "category": "emergency",
+    "question": "What problems did Apollo 13 encounter?"
+  },
+  {
+    "category": "crew",
+    "question": "Who were the Apollo 13 crew members?"
+  },
+  {
+    "category": "disaster_analysis",
+    "question": "What happened during Challenger STS-51L?"
+  },
+  {
+    "category": "technical",
+    "question": "What technical systems are mentioned in Apollo 11?"
+  },
+  {
+    "category": "timeline",
+    "question": "Walk me through Apollo 11 key events from launch to landing."
+  },
+  {
+    "category": "communications",
+    "question": "What communications are captured in the Challenger transcripts?"
+  }
+]

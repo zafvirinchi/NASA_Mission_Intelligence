@@ -14588,3 +14588,1585 @@ Mission breakdown:
 Collection: nasa_space_missions_text
 2026-05-16 21:50:58,928 - INFO - Total documents in collection: 30
 2026-05-16 21:50:58,928 - INFO - Pipeline completed successfully!
+2026-05-17 10:52:08,723 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:06:33,892 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:06:37,576 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:06:37,587 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:06:37,590 - INFO - Starting text data processing with update mode: replace
+2026-05-17 11:06:37,592 - INFO - No standard mission folders found. Scanning recursively: .
+2026-05-17 11:06:37,637 - INFO - Total text files to process: 15
+2026-05-17 11:06:37,637 - INFO - Files by mission:
+2026-05-17 11:06:37,638 - INFO -   apollo_11: 7 files
+2026-05-17 11:06:37,638 - INFO -   apollo_13: 4 files
+2026-05-17 11:06:37,639 - INFO -   challenger: 4 files
+2026-05-17 11:06:37,639 - INFO - Processing file: data_small\apollo11\a11transcript_tec_textract_full_text.txt
+2026-05-17 11:06:37,750 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:06:37,964 - ERROR - Failed to send telemetry event CollectionDeleteEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:06:37,964 - INFO - Deleted 10 documents matching source pattern: a11transcript_tec_textract_full_text
+2026-05-17 11:06:37,966 - INFO - Replace mode enabled. Deleted 10 existing chunks for a11transcript_tec_textract_full_text
+2026-05-17 11:06:41,419 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:42,363 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:43,135 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:44,099 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:45,265 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:46,135 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:47,025 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:47,827 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:48,641 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:49,491 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:50,301 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:51,122 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:51,875 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:52,668 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:53,744 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:54,510 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:55,290 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:56,140 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:56,931 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:57,765 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:58,562 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:06:59,545 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:00,342 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:01,160 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:02,009 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:02,833 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:03,630 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:04,673 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:05,456 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:06,284 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:07,126 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:07,990 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:08,942 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:09,827 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:10,762 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:11,554 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:12,407 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:13,321 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:14,205 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:15,073 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:15,819 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:16,634 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:17,500 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:18,230 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:19,005 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:19,874 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:20,739 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:21,494 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:22,272 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:23,088 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:23,254 - ERROR - Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:07:23,255 - INFO - Added batch of 50 documents
+2026-05-17 11:07:23,962 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:24,844 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:25,656 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:26,610 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:27,421 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:28,200 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:29,073 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:29,936 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:30,713 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:31,486 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:32,243 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:33,100 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:33,909 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:34,852 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:35,610 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:36,526 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:37,322 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:38,132 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:38,917 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:39,874 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:40,765 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:41,685 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:42,476 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:43,209 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:44,133 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:44,966 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:45,712 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:46,494 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:47,298 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:48,114 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:49,001 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:49,879 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:50,672 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:51,528 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:52,442 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:53,502 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:54,478 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:55,328 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:56,104 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:57,006 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:57,892 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:07:58,662 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:08:00,566 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:08:01,583 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:08:02,419 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:08:03,464 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:08:04,244 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:08:05,098 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:08:06,001 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:08:06,068 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:08:06,884 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:11:22,254 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:11:24,668 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:11:24,675 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:11:24,675 - INFO - Collection Statistics:
+2026-05-17 11:11:24,677 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:11:24,717 - INFO - total_documents: 70
+2026-05-17 11:11:24,717 - INFO - missions: {'apollo_13': 10, 'challenger': 10, 'apollo_11': 50}
+2026-05-17 11:11:24,717 - INFO - data_types: {'textract_extracted': 10, 'transcript': 60}
+2026-05-17 11:11:24,718 - INFO - document_categories: {'technical': 60, 'mission_audio': 10}
+2026-05-17 11:11:24,718 - INFO - file_types: {'text': 70}
+2026-05-17 11:13:26,371 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:13:27,544 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:13:27,551 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:13:27,552 - INFO - Collection Statistics:
+2026-05-17 11:13:27,553 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:13:27,580 - INFO - total_documents: 70
+2026-05-17 11:13:27,581 - INFO - missions: {'apollo_13': 10, 'challenger': 10, 'apollo_11': 50}
+2026-05-17 11:13:27,581 - INFO - data_types: {'textract_extracted': 10, 'transcript': 60}
+2026-05-17 11:13:27,581 - INFO - document_categories: {'technical': 60, 'mission_audio': 10}
+2026-05-17 11:13:27,581 - INFO - file_types: {'text': 70}
+2026-05-17 11:15:24,030 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:15:25,701 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:15:25,710 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:15:25,710 - INFO - Starting text data processing with update mode: replace
+2026-05-17 11:15:25,712 - INFO - No standard mission folders found. Scanning recursively: .
+2026-05-17 11:15:25,749 - INFO - Total text files to process: 15
+2026-05-17 11:15:25,749 - INFO - Files by mission:
+2026-05-17 11:15:25,750 - INFO -   apollo_11: 7 files
+2026-05-17 11:15:25,750 - INFO -   apollo_13: 4 files
+2026-05-17 11:15:25,751 - INFO -   challenger: 4 files
+2026-05-17 11:15:25,751 - INFO - Processing file: data_small\apollo11\a11transcript_tec_textract_full_text.txt
+2026-05-17 11:15:25,837 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:20:54,174 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:20:56,293 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:20:56,299 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:20:56,301 - INFO - Starting text data processing with update mode: replace
+2026-05-17 11:20:56,303 - INFO - Scanning directory: data_text\apollo11
+2026-05-17 11:20:56,304 - INFO - Found 6 text files in apollo11
+2026-05-17 11:20:56,305 - INFO - Scanning directory: data_text\apollo13
+2026-05-17 11:20:56,306 - INFO - Found 3 text files in apollo13
+2026-05-17 11:20:56,306 - INFO - Scanning directory: data_text\challenger
+2026-05-17 11:20:56,307 - INFO - Found 3 text files in challenger
+2026-05-17 11:20:56,307 - INFO - Total text files to process: 12
+2026-05-17 11:20:56,307 - INFO - Files by mission:
+2026-05-17 11:20:56,307 - INFO -   apollo_11: 6 files
+2026-05-17 11:20:56,308 - INFO -   apollo_13: 3 files
+2026-05-17 11:20:56,308 - INFO -   challenger: 3 files
+2026-05-17 11:20:56,308 - INFO - Processing file: data_text\apollo11\19900066485_textract_full_text.txt
+2026-05-17 11:20:56,333 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:20:56,364 - INFO - No documents found matching source pattern: 19900066485_textract_full_text
+2026-05-17 11:20:56,364 - INFO - Replace mode enabled. Deleted 0 existing chunks for 19900066485_textract_full_text
+2026-05-17 11:20:59,123 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:20:59,910 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:01,271 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:02,099 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:02,963 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:03,732 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:04,552 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:05,421 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:06,388 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:07,282 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:08,435 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:09,252 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:10,208 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:11,054 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:11,896 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:12,942 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:13,827 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:14,644 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:15,426 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:16,288 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:17,384 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:18,639 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:19,619 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:20,442 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:21,339 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:22,162 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:23,228 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:24,082 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:24,834 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:25,784 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:26,569 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:27,488 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:28,299 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:29,089 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:29,998 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:30,800 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:31,599 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:32,406 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:33,260 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:34,100 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:34,839 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:35,697 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:36,514 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:37,253 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:38,369 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:39,229 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:40,224 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:40,980 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:41,817 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:21:42,642 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:31,929 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:24:33,714 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:24:33,725 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:24:33,726 - INFO - Starting text data processing with update mode: replace
+2026-05-17 11:24:33,726 - INFO - Scanning directory: data_text\apollo11
+2026-05-17 11:24:33,728 - INFO - Found 6 text files in apollo11
+2026-05-17 11:24:33,728 - INFO - Scanning directory: data_text\apollo13
+2026-05-17 11:24:33,729 - INFO - Found 3 text files in apollo13
+2026-05-17 11:24:33,730 - INFO - Scanning directory: data_text\challenger
+2026-05-17 11:24:33,731 - INFO - Found 3 text files in challenger
+2026-05-17 11:24:33,731 - INFO - Total text files to process: 12
+2026-05-17 11:24:33,732 - INFO - Files by mission:
+2026-05-17 11:24:33,733 - INFO -   apollo_11: 6 files
+2026-05-17 11:24:33,733 - INFO -   apollo_13: 3 files
+2026-05-17 11:24:33,734 - INFO -   challenger: 3 files
+2026-05-17 11:24:33,735 - INFO - Processing file: data_text\apollo11\19900066485_textract_full_text.txt
+2026-05-17 11:24:33,783 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:24:33,854 - INFO - No documents found matching source pattern: 19900066485_textract_full_text
+2026-05-17 11:24:33,855 - INFO - Replace mode enabled. Deleted 0 existing chunks for 19900066485_textract_full_text
+2026-05-17 11:24:36,258 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:37,129 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:39,302 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:40,304 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:41,086 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:42,159 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:43,103 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:43,914 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:45,008 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:45,855 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:47,015 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:47,821 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:48,613 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:49,360 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:50,184 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:51,075 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:52,318 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:53,242 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:54,306 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:55,148 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:56,017 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:56,821 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:57,758 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:58,585 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:24:59,395 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:00,254 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:01,056 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:01,962 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:02,813 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:03,607 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:04,507 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:05,331 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:06,150 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:08,133 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:09,099 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:09,910 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:10,776 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:11,583 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:12,924 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:13,761 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:14,550 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:16,118 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:16,941 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:18,049 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:18,909 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:19,741 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:20,529 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:21,404 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:22,244 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:25:23,896 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:27:03,990 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:27:05,296 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:27:05,303 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:27:05,303 - INFO - Collection Statistics:
+2026-05-17 11:27:05,305 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:27:05,336 - INFO - total_documents: 70
+2026-05-17 11:27:05,336 - INFO - missions: {'apollo_13': 10, 'challenger': 10, 'apollo_11': 50}
+2026-05-17 11:27:05,336 - INFO - data_types: {'textract_extracted': 10, 'transcript': 60}
+2026-05-17 11:27:05,336 - INFO - document_categories: {'technical': 60, 'mission_audio': 10}
+2026-05-17 11:27:05,336 - INFO - file_types: {'text': 70}
+2026-05-17 11:28:27,315 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:28:28,963 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:28:29,028 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:28:29,029 - INFO - Starting text data processing with update mode: skip
+2026-05-17 11:28:29,030 - INFO - Scanning directory: data_text\apollo11
+2026-05-17 11:28:29,032 - INFO - Found 6 text files in apollo11
+2026-05-17 11:28:29,033 - INFO - Scanning directory: data_text\apollo13
+2026-05-17 11:28:29,034 - INFO - Found 3 text files in apollo13
+2026-05-17 11:28:29,035 - INFO - Scanning directory: data_text\challenger
+2026-05-17 11:28:29,037 - INFO - Found 3 text files in challenger
+2026-05-17 11:28:29,038 - INFO - Total text files to process: 12
+2026-05-17 11:28:29,039 - INFO - Files by mission:
+2026-05-17 11:28:29,039 - INFO -   apollo_11: 6 files
+2026-05-17 11:28:29,040 - INFO -   apollo_13: 3 files
+2026-05-17 11:28:29,040 - INFO -   challenger: 3 files
+2026-05-17 11:28:29,041 - INFO - Processing file: data_text\apollo11\19900066485_textract_full_text.txt
+2026-05-17 11:28:29,092 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:28:32,002 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:32,820 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:33,596 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:34,702 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:35,554 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:36,500 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:37,373 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:38,170 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:39,066 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:39,948 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:40,049 - ERROR - Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:28:40,050 - INFO - Added batch of 10 documents
+2026-05-17 11:28:40,826 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:41,716 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:42,603 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:43,448 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:44,348 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:45,206 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:46,010 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:46,893 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:47,715 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:48,498 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:48,584 - INFO - Added batch of 10 documents
+2026-05-17 11:28:49,449 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:50,972 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:51,725 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:52,576 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:53,388 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:54,156 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:55,170 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:55,996 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:56,812 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:57,679 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:57,767 - INFO - Added batch of 10 documents
+2026-05-17 11:28:58,548 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:28:59,626 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:00,675 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:01,448 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:03,113 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:03,879 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:04,676 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:05,538 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:07,373 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:08,139 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:08,214 - INFO - Added batch of 10 documents
+2026-05-17 11:29:09,116 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:09,945 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:10,992 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:12,565 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:13,322 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:14,258 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:15,185 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:16,697 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:17,494 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:18,600 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:18,650 - INFO - Added batch of 10 documents
+2026-05-17 11:29:19,526 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:20,634 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:21,554 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:22,386 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:23,284 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:24,142 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:25,038 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:25,852 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:27,281 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:28,083 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:28,178 - INFO - Added batch of 10 documents
+2026-05-17 11:29:28,921 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:31,780 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:32,695 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:33,605 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:34,405 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:35,290 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:36,044 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:37,019 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:37,844 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:38,734 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:38,828 - INFO - Added batch of 10 documents
+2026-05-17 11:29:39,588 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:40,816 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:41,779 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:42,749 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:43,511 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:44,363 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:45,376 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:46,143 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:47,057 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:48,070 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:48,142 - INFO - Added batch of 10 documents
+2026-05-17 11:29:49,817 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:50,613 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:51,617 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:52,495 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:53,310 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:54,417 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:55,433 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:56,607 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:57,484 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:59,231 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:29:59,287 - INFO - Added batch of 10 documents
+2026-05-17 11:30:00,068 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:30:00,961 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:30:02,176 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:30:02,970 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:30:03,916 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:30:04,905 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:30:05,722 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:30:06,692 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:30:07,553 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:30:08,365 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 11:32:23,696 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:32:25,442 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:32:25,448 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:32:25,448 - INFO - Collection Statistics:
+2026-05-17 11:32:25,450 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:32:25,483 - INFO - total_documents: 90
+2026-05-17 11:32:25,484 - INFO - missions: {'apollo_11': 90}
+2026-05-17 11:32:25,484 - INFO - data_types: {'textract_extracted': 90}
+2026-05-17 11:32:25,484 - INFO - document_categories: {'technical_report': 90}
+2026-05-17 11:32:25,484 - INFO - file_types: {'text': 90}
+2026-05-17 11:33:11,274 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 11:33:12,816 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:33:12,822 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:33:12,823 - INFO - Collection Statistics:
+2026-05-17 11:33:12,826 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 11:33:12,874 - INFO - total_documents: 90
+2026-05-17 11:33:12,875 - INFO - missions: {'apollo_11': 90}
+2026-05-17 11:33:12,875 - INFO - data_types: {'textract_extracted': 90}
+2026-05-17 11:33:12,876 - INFO - document_categories: {'technical_report': 90}
+2026-05-17 11:33:12,877 - INFO - file_types: {'text': 90}
+2026-05-17 12:02:17,565 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 12:02:19,585 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:02:19,594 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:02:19,595 - INFO - Collection Statistics:
+2026-05-17 12:02:19,598 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:02:19,682 - INFO - total_documents: 90
+2026-05-17 12:02:19,682 - INFO - missions: {'apollo_11': 90}
+2026-05-17 12:02:19,683 - INFO - data_types: {'textract_extracted': 90}
+2026-05-17 12:02:19,683 - INFO - document_categories: {'technical_report': 90}
+2026-05-17 12:02:19,683 - INFO - file_types: {'text': 90}
+2026-05-17 12:33:28,142 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 12:33:29,241 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:33:29,247 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:33:29,247 - INFO - Collection Statistics:
+2026-05-17 12:33:29,248 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:33:29,290 - INFO - total_documents: 90
+2026-05-17 12:33:29,290 - INFO - missions: {'apollo_11': 90}
+2026-05-17 12:33:29,291 - INFO - data_types: {'textract_extracted': 90}
+2026-05-17 12:33:29,291 - INFO - document_categories: {'technical_report': 90}
+2026-05-17 12:33:29,291 - INFO - file_types: {'text': 90}
+2026-05-17 12:35:37,556 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 12:35:38,930 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:35:38,935 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:35:38,936 - INFO - Starting text data processing with update mode: skip
+2026-05-17 12:35:38,936 - INFO - Scanning directory: data_text\apollo11
+2026-05-17 12:35:38,937 - INFO - Found 6 text files in apollo11
+2026-05-17 12:35:38,937 - INFO - Scanning directory: data_text\apollo13
+2026-05-17 12:35:38,938 - INFO - Found 3 text files in apollo13
+2026-05-17 12:35:38,938 - INFO - Scanning directory: data_text\challenger
+2026-05-17 12:35:38,939 - INFO - Found 3 text files in challenger
+2026-05-17 12:35:38,940 - INFO - Total text files to process: 12
+2026-05-17 12:35:38,941 - INFO - Files by mission:
+2026-05-17 12:35:38,941 - INFO -   apollo_11: 6 files
+2026-05-17 12:35:38,941 - INFO -   apollo_13: 3 files
+2026-05-17 12:35:38,941 - INFO -   challenger: 3 files
+2026-05-17 12:35:38,941 - INFO - Processing file: data_text\apollo11\19900066485_textract_full_text.txt
+2026-05-17 12:35:38,958 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:35:41,344 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:35:44,370 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:35:45,313 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:35:46,219 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:35:47,060 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:35:47,872 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:35:48,680 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:35:49,517 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:35:50,327 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:35:51,159 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:36:24,729 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 12:36:25,611 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:36:25,616 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:36:25,617 - INFO - Collection Statistics:
+2026-05-17 12:36:25,618 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:36:25,650 - INFO - total_documents: 90
+2026-05-17 12:36:25,651 - INFO - missions: {'apollo_11': 90}
+2026-05-17 12:36:25,651 - INFO - data_types: {'textract_extracted': 90}
+2026-05-17 12:36:25,651 - INFO - document_categories: {'technical_report': 90}
+2026-05-17 12:36:25,651 - INFO - file_types: {'text': 90}
+2026-05-17 12:39:47,487 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 12:39:48,736 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:39:48,741 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:39:48,741 - INFO - Starting text data processing with update mode: skip
+2026-05-17 12:39:48,744 - INFO - No standard mission folders found. Scanning recursively: data_text\apollo13
+2026-05-17 12:39:48,745 - INFO - Total text files to process: 3
+2026-05-17 12:39:48,745 - INFO - Files by mission:
+2026-05-17 12:39:48,746 - INFO -   apollo_13: 3 files
+2026-05-17 12:39:48,746 - INFO - Processing file: data_text\apollo13\AS13_CM_textract_full_text.txt
+2026-05-17 12:39:48,751 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:39:51,630 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:39:52,489 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:39:53,715 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:39:54,536 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:39:55,381 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:39:56,143 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:39:57,525 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:39:58,349 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:39:59,167 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:00,001 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:22,610 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 12:40:23,814 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:40:23,819 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:40:23,820 - INFO - Starting text data processing with update mode: skip
+2026-05-17 12:40:23,821 - INFO - No standard mission folders found. Scanning recursively: data_text\challenger
+2026-05-17 12:40:23,823 - INFO - Total text files to process: 3
+2026-05-17 12:40:23,823 - INFO - Files by mission:
+2026-05-17 12:40:23,823 - INFO -   challenger: 3 files
+2026-05-17 12:40:23,824 - INFO - Processing file: data_text\challenger\107-AAG_STS-51L_Mission_Audio_transcript.txt
+2026-05-17 12:40:23,836 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:40:26,266 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:27,060 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:27,938 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:28,694 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:29,448 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:30,421 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:31,658 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:32,410 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:33,218 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:33,945 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:40:50,688 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 12:40:51,484 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:40:51,487 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:40:51,487 - INFO - Collection Statistics:
+2026-05-17 12:40:51,488 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:40:51,530 - INFO - total_documents: 90
+2026-05-17 12:40:51,530 - INFO - missions: {'apollo_11': 90}
+2026-05-17 12:40:51,530 - INFO - data_types: {'textract_extracted': 90}
+2026-05-17 12:40:51,531 - INFO - document_categories: {'technical_report': 90}
+2026-05-17 12:40:51,531 - INFO - file_types: {'text': 90}
+2026-05-17 12:58:47,327 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 12:58:48,481 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:58:48,487 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:58:48,487 - INFO - Starting text data processing with update mode: skip
+2026-05-17 12:58:48,489 - INFO - No standard mission folders found. Scanning recursively: data_text\apollo13
+2026-05-17 12:58:48,491 - INFO - Total text files to process: 3
+2026-05-17 12:58:48,491 - INFO - Files by mission:
+2026-05-17 12:58:48,491 - INFO -   apollo_13: 3 files
+2026-05-17 12:58:48,491 - INFO - Processing file: data_text\apollo13\AS13_CM_textract_full_text.txt
+2026-05-17 12:58:48,497 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:58:50,835 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:58:50,975 - ERROR - Failed to send telemetry event CollectionAddEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:58:50,976 - INFO - Added document 1: apollo_13_as13_cm_textract_full_text_chunk_0000
+2026-05-17 12:58:51,744 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:58:51,819 - INFO - Added document 2: apollo_13_as13_cm_textract_full_text_chunk_0001
+2026-05-17 12:58:52,546 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:58:52,616 - INFO - Added document 3: apollo_13_as13_cm_textract_full_text_chunk_0002
+2026-05-17 12:58:53,458 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:58:53,527 - INFO - Added document 4: apollo_13_as13_cm_textract_full_text_chunk_0003
+2026-05-17 12:58:54,351 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:58:54,405 - INFO - Added document 5: apollo_13_as13_cm_textract_full_text_chunk_0004
+2026-05-17 12:58:55,262 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:58:55,332 - INFO - Added document 6: apollo_13_as13_cm_textract_full_text_chunk_0005
+2026-05-17 12:58:56,153 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:58:56,185 - INFO - Added document 7: apollo_13_as13_cm_textract_full_text_chunk_0006
+2026-05-17 12:58:56,970 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:58:57,030 - INFO - Added document 8: apollo_13_as13_cm_textract_full_text_chunk_0007
+2026-05-17 12:58:57,817 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:58:57,895 - INFO - Added document 9: apollo_13_as13_cm_textract_full_text_chunk_0008
+2026-05-17 12:58:58,626 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 12:59:42,138 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 12:59:43,811 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:59:43,820 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:59:43,821 - INFO - Collection Statistics:
+2026-05-17 12:59:43,824 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 12:59:43,892 - INFO - total_documents: 99
+2026-05-17 12:59:43,892 - INFO - missions: {'apollo_11': 90, 'apollo_13': 9}
+2026-05-17 12:59:43,893 - INFO - data_types: {'textract_extracted': 99}
+2026-05-17 12:59:43,893 - INFO - document_categories: {'technical_report': 90, 'command_module': 9}
+2026-05-17 12:59:43,893 - INFO - file_types: {'text': 99}
+2026-05-17 13:00:10,534 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:00:11,396 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:00:11,403 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:00:11,403 - INFO - Starting text data processing with update mode: skip
+2026-05-17 13:00:11,404 - INFO - No standard mission folders found. Scanning recursively: data_text\challenger
+2026-05-17 13:00:11,405 - INFO - Total text files to process: 3
+2026-05-17 13:00:11,406 - INFO - Files by mission:
+2026-05-17 13:00:11,406 - INFO -   challenger: 3 files
+2026-05-17 13:00:11,406 - INFO - Processing file: data_text\challenger\107-AAG_STS-51L_Mission_Audio_transcript.txt
+2026-05-17 13:00:11,413 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:00:14,281 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:00:38,905 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:00:40,658 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:00:40,666 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:00:40,667 - INFO - Starting text data processing with update mode: skip
+2026-05-17 13:00:40,669 - INFO - No standard mission folders found. Scanning recursively: data_text\apollo13
+2026-05-17 13:00:40,670 - INFO - Total text files to process: 3
+2026-05-17 13:00:40,670 - INFO - Files by mission:
+2026-05-17 13:00:40,671 - INFO -   apollo_13: 3 files
+2026-05-17 13:00:40,671 - INFO - Processing file: data_text\apollo13\AS13_CM_textract_full_text.txt
+2026-05-17 13:00:40,680 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:00:42,377 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:00:54,160 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:00:55,134 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:00:55,138 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:00:55,138 - INFO - Starting text data processing with update mode: skip
+2026-05-17 13:00:55,139 - INFO - No standard mission folders found. Scanning recursively: data_text\challenger
+2026-05-17 13:00:55,139 - INFO - Total text files to process: 3
+2026-05-17 13:00:55,140 - INFO - Files by mission:
+2026-05-17 13:00:55,140 - INFO -   challenger: 3 files
+2026-05-17 13:00:55,140 - INFO - Processing file: data_text\challenger\107-AAG_STS-51L_Mission_Audio_transcript.txt
+2026-05-17 13:00:55,147 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:00:56,819 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:01:16,391 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:01:17,650 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:01:17,656 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:01:17,657 - INFO - Collection Statistics:
+2026-05-17 13:01:17,660 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:01:17,725 - INFO - total_documents: 99
+2026-05-17 13:01:17,726 - INFO - missions: {'apollo_11': 90, 'apollo_13': 9}
+2026-05-17 13:01:17,726 - INFO - data_types: {'textract_extracted': 99}
+2026-05-17 13:01:17,727 - INFO - document_categories: {'technical_report': 90, 'command_module': 9}
+2026-05-17 13:01:17,727 - INFO - file_types: {'text': 99}
+2026-05-17 13:02:36,187 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:02:37,692 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:02:37,703 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:02:37,705 - INFO - Starting text data processing with update mode: skip
+2026-05-17 13:02:37,706 - INFO - No standard mission folders found. Scanning recursively: data_text\challenger
+2026-05-17 13:02:37,708 - INFO - Total text files to process: 3
+2026-05-17 13:02:37,708 - INFO - Files by mission:
+2026-05-17 13:02:37,710 - INFO -   challenger: 3 files
+2026-05-17 13:02:37,710 - INFO - Processing file: data_text\challenger\107-AAG_STS-51L_Mission_Audio_transcript.txt
+2026-05-17 13:02:37,730 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:02:40,649 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:02:57,879 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:02:59,912 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:02:59,923 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:02:59,924 - INFO - Starting text data processing with update mode: skip
+2026-05-17 13:02:59,926 - INFO - No standard mission folders found. Scanning recursively: data_text\challenger
+2026-05-17 13:02:59,927 - INFO - Total text files to process: 3
+2026-05-17 13:02:59,928 - INFO - Files by mission:
+2026-05-17 13:02:59,929 - INFO -   challenger: 3 files
+2026-05-17 13:02:59,930 - INFO - Processing file: data_text\challenger\107-AAG_STS-51L_Mission_Audio_transcript.txt
+2026-05-17 13:02:59,950 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:03:02,500 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:03:26,501 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:03:28,250 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:03:28,258 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:03:28,259 - INFO - Collection Statistics:
+2026-05-17 13:03:28,261 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:03:28,342 - INFO - total_documents: 99
+2026-05-17 13:03:28,342 - INFO - missions: {'apollo_11': 90, 'apollo_13': 9}
+2026-05-17 13:03:28,343 - INFO - data_types: {'textract_extracted': 99}
+2026-05-17 13:03:28,343 - INFO - document_categories: {'technical_report': 90, 'command_module': 9}
+2026-05-17 13:03:28,343 - INFO - file_types: {'text': 99}
+2026-05-17 13:05:35,157 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:05:36,713 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:05:36,719 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:05:36,720 - INFO - Starting text data processing with update mode: skip
+2026-05-17 13:05:36,720 - INFO - No standard mission folders found. Scanning recursively: data_text\challenger_small
+2026-05-17 13:05:36,721 - INFO - Total text files to process: 1
+2026-05-17 13:05:36,721 - INFO - Files by mission:
+2026-05-17 13:05:36,721 - INFO -   challenger: 1 files
+2026-05-17 13:05:36,722 - INFO - Processing file: data_text\challenger_small\challenger_test.txt
+2026-05-17 13:05:36,723 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:05:39,799 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:06:12,283 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:06:13,202 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:06:13,207 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:06:13,208 - INFO - Collection Statistics:
+2026-05-17 13:06:13,208 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:06:13,242 - INFO - total_documents: 99
+2026-05-17 13:06:13,242 - INFO - missions: {'apollo_11': 90, 'apollo_13': 9}
+2026-05-17 13:06:13,243 - INFO - data_types: {'textract_extracted': 99}
+2026-05-17 13:06:13,243 - INFO - document_categories: {'technical_report': 90, 'command_module': 9}
+2026-05-17 13:06:13,243 - INFO - file_types: {'text': 99}
+2026-05-17 13:08:41,464 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:08:42,786 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:08:42,793 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:08:42,793 - INFO - Collection Statistics:
+2026-05-17 13:08:42,796 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:08:42,871 - INFO - total_documents: 99
+2026-05-17 13:08:42,872 - INFO - missions: {'apollo_11': 90, 'apollo_13': 9}
+2026-05-17 13:08:42,872 - INFO - data_types: {'textract_extracted': 99}
+2026-05-17 13:08:42,873 - INFO - document_categories: {'technical_report': 90, 'command_module': 9}
+2026-05-17 13:08:42,873 - INFO - file_types: {'text': 99}
+2026-05-17 13:13:46,962 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:13:48,082 - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:13:48,088 - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:13:48,089 - INFO - Collection Statistics:
+2026-05-17 13:13:48,090 - ERROR - Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-05-17 13:13:48,125 - INFO - total_documents: 99
+2026-05-17 13:13:48,125 - INFO - missions: {'apollo_11': 90, 'apollo_13': 9}
+2026-05-17 13:13:48,125 - INFO - data_types: {'textract_extracted': 99}
+2026-05-17 13:13:48,125 - INFO - document_categories: {'technical_report': 90, 'command_module': 9}
+2026-05-17 13:13:48,125 - INFO - file_types: {'text': 99}
+2026-05-17 13:17:29,186 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:17:30,787 - INFO - Collection Statistics:
+2026-05-17 13:17:30,847 - INFO - total_documents: 99
+2026-05-17 13:17:30,848 - INFO - missions: {'apollo_11': 90, 'apollo_13': 9}
+2026-05-17 13:17:30,848 - INFO - data_types: {'textract_extracted': 99}
+2026-05-17 13:17:30,849 - INFO - document_categories: {'technical_report': 90, 'command_module': 9}
+2026-05-17 13:17:30,849 - INFO - file_types: {'text': 99}
+2026-05-17 13:26:29,527 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:26:31,039 - INFO - Collection Statistics:
+2026-05-17 13:26:31,071 - INFO - total_documents: 99
+2026-05-17 13:26:31,072 - INFO - missions: {'apollo_11': 90, 'apollo_13': 9}
+2026-05-17 13:26:31,072 - INFO - data_types: {'textract_extracted': 99}
+2026-05-17 13:26:31,072 - INFO - document_categories: {'technical_report': 90, 'command_module': 9}
+2026-05-17 13:26:31,072 - INFO - file_types: {'text': 99}
+2026-05-17 13:30:46,023 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:30:47,541 - INFO - Starting text data processing with update mode: skip
+2026-05-17 13:30:47,542 - INFO - Scanning directory: data_small\apollo11
+2026-05-17 13:30:47,542 - INFO - Found 1 text files in apollo11
+2026-05-17 13:30:47,543 - INFO - Scanning directory: data_small\apollo13
+2026-05-17 13:30:47,543 - INFO - Found 1 text files in apollo13
+2026-05-17 13:30:47,544 - INFO - Scanning directory: data_small\challenger
+2026-05-17 13:30:47,545 - INFO - Found 1 text files in challenger
+2026-05-17 13:30:47,545 - INFO - Total text files to process: 3
+2026-05-17 13:30:47,545 - INFO - Files by mission:
+2026-05-17 13:30:47,546 - INFO -   apollo_11: 1 files
+2026-05-17 13:30:47,546 - INFO -   apollo_13: 1 files
+2026-05-17 13:30:47,546 - INFO -   challenger: 1 files
+2026-05-17 13:30:47,546 - INFO - Processing file: data_small\apollo11\a11transcript_tec_textract_full_text.txt
+2026-05-17 13:30:50,364 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:50,453 - INFO - Added document 1: apollo_11_a11transcript_tec_textract_full_text_chunk_0000
+2026-05-17 13:30:51,193 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:51,248 - INFO - Added document 2: apollo_11_a11transcript_tec_textract_full_text_chunk_0001
+2026-05-17 13:30:51,982 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:52,046 - INFO - Added document 3: apollo_11_a11transcript_tec_textract_full_text_chunk_0002
+2026-05-17 13:30:52,874 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:52,948 - INFO - Added document 4: apollo_11_a11transcript_tec_textract_full_text_chunk_0003
+2026-05-17 13:30:53,703 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:53,772 - INFO - Added document 5: apollo_11_a11transcript_tec_textract_full_text_chunk_0004
+2026-05-17 13:30:54,564 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:54,625 - INFO - Added document 6: apollo_11_a11transcript_tec_textract_full_text_chunk_0005
+2026-05-17 13:30:55,750 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:55,819 - INFO - Added document 7: apollo_11_a11transcript_tec_textract_full_text_chunk_0006
+2026-05-17 13:30:56,619 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:56,689 - INFO - Added document 8: apollo_11_a11transcript_tec_textract_full_text_chunk_0007
+2026-05-17 13:30:57,457 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:57,499 - INFO - Added document 9: apollo_11_a11transcript_tec_textract_full_text_chunk_0008
+2026-05-17 13:30:58,347 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:58,439 - INFO - Added document 10: apollo_11_a11transcript_tec_textract_full_text_chunk_0009
+2026-05-17 13:30:59,260 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:30:59,308 - INFO - Added document 11: apollo_11_a11transcript_tec_textract_full_text_chunk_0010
+2026-05-17 13:31:00,133 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:00,215 - INFO - Added document 12: apollo_11_a11transcript_tec_textract_full_text_chunk_0011
+2026-05-17 13:31:01,018 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:01,111 - INFO - Added document 13: apollo_11_a11transcript_tec_textract_full_text_chunk_0012
+2026-05-17 13:31:02,448 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:02,523 - INFO - Added document 14: apollo_11_a11transcript_tec_textract_full_text_chunk_0013
+2026-05-17 13:31:03,396 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:03,468 - INFO - Added document 15: apollo_11_a11transcript_tec_textract_full_text_chunk_0014
+2026-05-17 13:31:04,336 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:04,423 - INFO - Added document 16: apollo_11_a11transcript_tec_textract_full_text_chunk_0015
+2026-05-17 13:31:05,390 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:05,461 - INFO - Added document 17: apollo_11_a11transcript_tec_textract_full_text_chunk_0016
+2026-05-17 13:31:06,449 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:06,533 - INFO - Added document 18: apollo_11_a11transcript_tec_textract_full_text_chunk_0017
+2026-05-17 13:31:07,333 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:07,385 - INFO - Added document 19: apollo_11_a11transcript_tec_textract_full_text_chunk_0018
+2026-05-17 13:31:08,230 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:08,304 - INFO - Added document 20: apollo_11_a11transcript_tec_textract_full_text_chunk_0019
+2026-05-17 13:31:08,996 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:09,070 - INFO - Added document 21: apollo_11_a11transcript_tec_textract_full_text_chunk_0020
+2026-05-17 13:31:09,945 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:10,006 - INFO - Added document 22: apollo_11_a11transcript_tec_textract_full_text_chunk_0021
+2026-05-17 13:31:10,832 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:10,894 - INFO - Added document 23: apollo_11_a11transcript_tec_textract_full_text_chunk_0022
+2026-05-17 13:31:11,761 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:11,866 - INFO - Added document 24: apollo_11_a11transcript_tec_textract_full_text_chunk_0023
+2026-05-17 13:31:12,630 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:12,697 - INFO - Added document 25: apollo_11_a11transcript_tec_textract_full_text_chunk_0024
+2026-05-17 13:31:13,508 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:13,610 - INFO - Added document 26: apollo_11_a11transcript_tec_textract_full_text_chunk_0025
+2026-05-17 13:31:14,374 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:14,448 - INFO - Added document 27: apollo_11_a11transcript_tec_textract_full_text_chunk_0026
+2026-05-17 13:31:15,225 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:15,308 - INFO - Added document 28: apollo_11_a11transcript_tec_textract_full_text_chunk_0027
+2026-05-17 13:31:16,185 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:16,254 - INFO - Added document 29: apollo_11_a11transcript_tec_textract_full_text_chunk_0028
+2026-05-17 13:31:17,040 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:17,109 - INFO - Added document 30: apollo_11_a11transcript_tec_textract_full_text_chunk_0029
+2026-05-17 13:31:17,816 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:17,877 - INFO - Added document 31: apollo_11_a11transcript_tec_textract_full_text_chunk_0030
+2026-05-17 13:31:18,706 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:18,767 - INFO - Added document 32: apollo_11_a11transcript_tec_textract_full_text_chunk_0031
+2026-05-17 13:31:19,567 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:19,648 - INFO - Added document 33: apollo_11_a11transcript_tec_textract_full_text_chunk_0032
+2026-05-17 13:31:20,409 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:20,490 - INFO - Added document 34: apollo_11_a11transcript_tec_textract_full_text_chunk_0033
+2026-05-17 13:31:21,295 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:21,335 - INFO - Added document 35: apollo_11_a11transcript_tec_textract_full_text_chunk_0034
+2026-05-17 13:31:22,169 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:22,231 - INFO - Added document 36: apollo_11_a11transcript_tec_textract_full_text_chunk_0035
+2026-05-17 13:31:23,033 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:23,085 - INFO - Added document 37: apollo_11_a11transcript_tec_textract_full_text_chunk_0036
+2026-05-17 13:31:23,845 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:23,912 - INFO - Added document 38: apollo_11_a11transcript_tec_textract_full_text_chunk_0037
+2026-05-17 13:31:24,632 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:24,713 - INFO - Added document 39: apollo_11_a11transcript_tec_textract_full_text_chunk_0038
+2026-05-17 13:31:25,519 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:25,586 - INFO - Added document 40: apollo_11_a11transcript_tec_textract_full_text_chunk_0039
+2026-05-17 13:31:26,346 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:26,390 - INFO - Added document 41: apollo_11_a11transcript_tec_textract_full_text_chunk_0040
+2026-05-17 13:31:27,221 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:27,291 - INFO - Added document 42: apollo_11_a11transcript_tec_textract_full_text_chunk_0041
+2026-05-17 13:31:28,077 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:28,137 - INFO - Added document 43: apollo_11_a11transcript_tec_textract_full_text_chunk_0042
+2026-05-17 13:31:28,972 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:29,042 - INFO - Added document 44: apollo_11_a11transcript_tec_textract_full_text_chunk_0043
+2026-05-17 13:31:29,749 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:29,813 - INFO - Added document 45: apollo_11_a11transcript_tec_textract_full_text_chunk_0044
+2026-05-17 13:31:30,674 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:30,750 - INFO - Added document 46: apollo_11_a11transcript_tec_textract_full_text_chunk_0045
+2026-05-17 13:31:31,492 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:31,565 - INFO - Added document 47: apollo_11_a11transcript_tec_textract_full_text_chunk_0046
+2026-05-17 13:31:32,370 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:32,447 - INFO - Added document 48: apollo_11_a11transcript_tec_textract_full_text_chunk_0047
+2026-05-17 13:31:33,222 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:33,287 - INFO - Added document 49: apollo_11_a11transcript_tec_textract_full_text_chunk_0048
+2026-05-17 13:31:34,048 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:34,130 - INFO - Added document 50: apollo_11_a11transcript_tec_textract_full_text_chunk_0049
+2026-05-17 13:31:34,845 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:34,910 - INFO - Added document 51: apollo_11_a11transcript_tec_textract_full_text_chunk_0050
+2026-05-17 13:31:35,731 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:35,791 - INFO - Added document 52: apollo_11_a11transcript_tec_textract_full_text_chunk_0051
+2026-05-17 13:31:36,532 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:36,578 - INFO - Added document 53: apollo_11_a11transcript_tec_textract_full_text_chunk_0052
+2026-05-17 13:31:37,391 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:37,487 - INFO - Added document 54: apollo_11_a11transcript_tec_textract_full_text_chunk_0053
+2026-05-17 13:31:38,185 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:38,254 - INFO - Added document 55: apollo_11_a11transcript_tec_textract_full_text_chunk_0054
+2026-05-17 13:31:39,158 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:39,212 - INFO - Added document 56: apollo_11_a11transcript_tec_textract_full_text_chunk_0055
+2026-05-17 13:31:39,952 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:40,023 - INFO - Added document 57: apollo_11_a11transcript_tec_textract_full_text_chunk_0056
+2026-05-17 13:31:40,957 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:41,021 - INFO - Added document 58: apollo_11_a11transcript_tec_textract_full_text_chunk_0057
+2026-05-17 13:31:41,776 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:41,836 - INFO - Added document 59: apollo_11_a11transcript_tec_textract_full_text_chunk_0058
+2026-05-17 13:31:42,557 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:42,602 - INFO - Added document 60: apollo_11_a11transcript_tec_textract_full_text_chunk_0059
+2026-05-17 13:31:43,392 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:43,459 - INFO - Added document 61: apollo_11_a11transcript_tec_textract_full_text_chunk_0060
+2026-05-17 13:31:44,154 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:44,221 - INFO - Added document 62: apollo_11_a11transcript_tec_textract_full_text_chunk_0061
+2026-05-17 13:31:44,902 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:44,964 - INFO - Added document 63: apollo_11_a11transcript_tec_textract_full_text_chunk_0062
+2026-05-17 13:31:45,713 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:45,792 - INFO - Added document 64: apollo_11_a11transcript_tec_textract_full_text_chunk_0063
+2026-05-17 13:31:46,646 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:46,709 - INFO - Added document 65: apollo_11_a11transcript_tec_textract_full_text_chunk_0064
+2026-05-17 13:31:47,407 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:47,472 - INFO - Added document 66: apollo_11_a11transcript_tec_textract_full_text_chunk_0065
+2026-05-17 13:31:48,250 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:48,308 - INFO - Added document 67: apollo_11_a11transcript_tec_textract_full_text_chunk_0066
+2026-05-17 13:31:49,053 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:49,124 - INFO - Added document 68: apollo_11_a11transcript_tec_textract_full_text_chunk_0067
+2026-05-17 13:31:49,943 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:50,009 - INFO - Added document 69: apollo_11_a11transcript_tec_textract_full_text_chunk_0068
+2026-05-17 13:31:51,077 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:51,090 - INFO - Added document 70: apollo_11_a11transcript_tec_textract_full_text_chunk_0069
+2026-05-17 13:31:51,954 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:51,966 - INFO - Added document 71: apollo_11_a11transcript_tec_textract_full_text_chunk_0070
+2026-05-17 13:31:52,711 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:52,773 - INFO - Added document 72: apollo_11_a11transcript_tec_textract_full_text_chunk_0071
+2026-05-17 13:31:53,705 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:53,763 - INFO - Added document 73: apollo_11_a11transcript_tec_textract_full_text_chunk_0072
+2026-05-17 13:31:54,623 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:54,739 - INFO - Added document 74: apollo_11_a11transcript_tec_textract_full_text_chunk_0073
+2026-05-17 13:31:55,449 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:55,520 - INFO - Added document 75: apollo_11_a11transcript_tec_textract_full_text_chunk_0074
+2026-05-17 13:31:56,336 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:56,406 - INFO - Added document 76: apollo_11_a11transcript_tec_textract_full_text_chunk_0075
+2026-05-17 13:31:57,275 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:57,838 - INFO - Added document 77: apollo_11_a11transcript_tec_textract_full_text_chunk_0076
+2026-05-17 13:31:58,644 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:58,707 - INFO - Added document 78: apollo_11_a11transcript_tec_textract_full_text_chunk_0077
+2026-05-17 13:31:59,507 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:31:59,586 - INFO - Added document 79: apollo_11_a11transcript_tec_textract_full_text_chunk_0078
+2026-05-17 13:32:00,449 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:00,532 - INFO - Added document 80: apollo_11_a11transcript_tec_textract_full_text_chunk_0079
+2026-05-17 13:32:01,317 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:01,411 - INFO - Added document 81: apollo_11_a11transcript_tec_textract_full_text_chunk_0080
+2026-05-17 13:32:02,140 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:02,205 - INFO - Added document 82: apollo_11_a11transcript_tec_textract_full_text_chunk_0081
+2026-05-17 13:32:02,941 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:03,023 - INFO - Added document 83: apollo_11_a11transcript_tec_textract_full_text_chunk_0082
+2026-05-17 13:32:03,804 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:03,863 - INFO - Added document 84: apollo_11_a11transcript_tec_textract_full_text_chunk_0083
+2026-05-17 13:32:05,031 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:05,092 - INFO - Added document 85: apollo_11_a11transcript_tec_textract_full_text_chunk_0084
+2026-05-17 13:32:05,924 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:06,037 - INFO - Added document 86: apollo_11_a11transcript_tec_textract_full_text_chunk_0085
+2026-05-17 13:32:06,841 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:06,909 - INFO - Added document 87: apollo_11_a11transcript_tec_textract_full_text_chunk_0086
+2026-05-17 13:32:07,619 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:07,688 - INFO - Added document 88: apollo_11_a11transcript_tec_textract_full_text_chunk_0087
+2026-05-17 13:32:08,486 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:08,554 - INFO - Added document 89: apollo_11_a11transcript_tec_textract_full_text_chunk_0088
+2026-05-17 13:32:09,333 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:09,473 - INFO - Added document 90: apollo_11_a11transcript_tec_textract_full_text_chunk_0089
+2026-05-17 13:32:10,313 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:10,386 - INFO - Added document 91: apollo_11_a11transcript_tec_textract_full_text_chunk_0090
+2026-05-17 13:32:11,111 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:11,170 - INFO - Added document 92: apollo_11_a11transcript_tec_textract_full_text_chunk_0091
+2026-05-17 13:32:12,033 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:12,048 - INFO - Added document 93: apollo_11_a11transcript_tec_textract_full_text_chunk_0092
+2026-05-17 13:32:12,821 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:12,880 - INFO - Added document 94: apollo_11_a11transcript_tec_textract_full_text_chunk_0093
+2026-05-17 13:32:13,682 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:13,757 - INFO - Added document 95: apollo_11_a11transcript_tec_textract_full_text_chunk_0094
+2026-05-17 13:32:14,670 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:14,736 - INFO - Added document 96: apollo_11_a11transcript_tec_textract_full_text_chunk_0095
+2026-05-17 13:32:15,546 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:15,615 - INFO - Added document 97: apollo_11_a11transcript_tec_textract_full_text_chunk_0096
+2026-05-17 13:32:16,338 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:16,427 - INFO - Added document 98: apollo_11_a11transcript_tec_textract_full_text_chunk_0097
+2026-05-17 13:32:17,237 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:32:17,304 - INFO - Added document 99: apollo_11_a11transcript_tec_textract_full_text_chunk_0098
+2026-05-17 13:32:18,161 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:33:18,411 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:33:19,902 - INFO - Collection Statistics:
+2026-05-17 13:33:19,963 - INFO - total_documents: 99
+2026-05-17 13:33:19,964 - INFO - missions: {'apollo_11': 99}
+2026-05-17 13:33:19,965 - INFO - data_types: {'transcript': 99}
+2026-05-17 13:33:19,965 - INFO - document_categories: {'technical': 99}
+2026-05-17 13:33:19,965 - INFO - file_types: {'text': 99}
+2026-05-17 13:35:57,482 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:35:58,711 - INFO - Starting text data processing with update mode: skip
+2026-05-17 13:35:58,713 - INFO - No standard mission folders found. Scanning recursively: data_small\apollo11
+2026-05-17 13:35:58,714 - INFO - Total text files to process: 1
+2026-05-17 13:35:58,714 - INFO - Files by mission:
+2026-05-17 13:35:58,714 - INFO -   apollo_11: 1 files
+2026-05-17 13:35:58,714 - INFO - Processing file: data_small\apollo11\a11transcript_tec_textract_full_text.txt
+2026-05-17 13:36:03,198 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:03,267 - INFO - Added document 1: apollo_11_a11transcript_tec_textract_full_text_chunk_0000
+2026-05-17 13:36:04,289 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:04,348 - INFO - Added document 2: apollo_11_a11transcript_tec_textract_full_text_chunk_0001
+2026-05-17 13:36:05,289 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:05,370 - INFO - Added document 3: apollo_11_a11transcript_tec_textract_full_text_chunk_0002
+2026-05-17 13:36:06,294 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:06,362 - INFO - Added document 4: apollo_11_a11transcript_tec_textract_full_text_chunk_0003
+2026-05-17 13:36:07,222 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:07,276 - INFO - Added document 5: apollo_11_a11transcript_tec_textract_full_text_chunk_0004
+2026-05-17 13:36:08,357 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:08,456 - INFO - Added document 6: apollo_11_a11transcript_tec_textract_full_text_chunk_0005
+2026-05-17 13:36:09,367 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:09,440 - INFO - Added document 7: apollo_11_a11transcript_tec_textract_full_text_chunk_0006
+2026-05-17 13:36:10,418 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:10,461 - INFO - Added document 8: apollo_11_a11transcript_tec_textract_full_text_chunk_0007
+2026-05-17 13:36:11,295 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:11,340 - INFO - Added document 9: apollo_11_a11transcript_tec_textract_full_text_chunk_0008
+2026-05-17 13:36:12,349 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:12,405 - INFO - Added document 10: apollo_11_a11transcript_tec_textract_full_text_chunk_0009
+2026-05-17 13:36:13,274 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:13,352 - INFO - Added document 11: apollo_11_a11transcript_tec_textract_full_text_chunk_0010
+2026-05-17 13:36:14,209 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:14,277 - INFO - Added document 12: apollo_11_a11transcript_tec_textract_full_text_chunk_0011
+2026-05-17 13:36:15,157 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:15,246 - INFO - Added document 13: apollo_11_a11transcript_tec_textract_full_text_chunk_0012
+2026-05-17 13:36:16,142 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:16,227 - INFO - Added document 14: apollo_11_a11transcript_tec_textract_full_text_chunk_0013
+2026-05-17 13:36:17,150 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:17,237 - INFO - Added document 15: apollo_11_a11transcript_tec_textract_full_text_chunk_0014
+2026-05-17 13:36:18,138 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:18,229 - INFO - Added document 16: apollo_11_a11transcript_tec_textract_full_text_chunk_0015
+2026-05-17 13:36:19,121 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:19,214 - INFO - Added document 17: apollo_11_a11transcript_tec_textract_full_text_chunk_0016
+2026-05-17 13:36:20,194 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:20,259 - INFO - Added document 18: apollo_11_a11transcript_tec_textract_full_text_chunk_0017
+2026-05-17 13:36:21,225 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:21,298 - INFO - Added document 19: apollo_11_a11transcript_tec_textract_full_text_chunk_0018
+2026-05-17 13:36:22,199 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:22,273 - INFO - Added document 20: apollo_11_a11transcript_tec_textract_full_text_chunk_0019
+2026-05-17 13:36:23,150 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:23,210 - INFO - Added document 21: apollo_11_a11transcript_tec_textract_full_text_chunk_0020
+2026-05-17 13:36:24,132 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:24,211 - INFO - Added document 22: apollo_11_a11transcript_tec_textract_full_text_chunk_0021
+2026-05-17 13:36:25,150 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:25,218 - INFO - Added document 23: apollo_11_a11transcript_tec_textract_full_text_chunk_0022
+2026-05-17 13:36:26,065 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:26,144 - INFO - Added document 24: apollo_11_a11transcript_tec_textract_full_text_chunk_0023
+2026-05-17 13:36:27,111 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:27,174 - INFO - Added document 25: apollo_11_a11transcript_tec_textract_full_text_chunk_0024
+2026-05-17 13:36:28,105 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:28,171 - INFO - Added document 26: apollo_11_a11transcript_tec_textract_full_text_chunk_0025
+2026-05-17 13:36:29,030 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:29,097 - INFO - Added document 27: apollo_11_a11transcript_tec_textract_full_text_chunk_0026
+2026-05-17 13:36:30,142 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:30,219 - INFO - Added document 28: apollo_11_a11transcript_tec_textract_full_text_chunk_0027
+2026-05-17 13:36:31,133 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:31,223 - INFO - Added document 29: apollo_11_a11transcript_tec_textract_full_text_chunk_0028
+2026-05-17 13:36:32,093 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:32,175 - INFO - Added document 30: apollo_11_a11transcript_tec_textract_full_text_chunk_0029
+2026-05-17 13:36:32,983 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:33,047 - INFO - Added document 31: apollo_11_a11transcript_tec_textract_full_text_chunk_0030
+2026-05-17 13:36:33,960 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:34,047 - INFO - Added document 32: apollo_11_a11transcript_tec_textract_full_text_chunk_0031
+2026-05-17 13:36:34,927 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:35,003 - INFO - Added document 33: apollo_11_a11transcript_tec_textract_full_text_chunk_0032
+2026-05-17 13:36:35,907 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:36,021 - INFO - Added document 34: apollo_11_a11transcript_tec_textract_full_text_chunk_0033
+2026-05-17 13:36:36,860 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:36,930 - INFO - Added document 35: apollo_11_a11transcript_tec_textract_full_text_chunk_0034
+2026-05-17 13:36:37,845 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:37,915 - INFO - Added document 36: apollo_11_a11transcript_tec_textract_full_text_chunk_0035
+2026-05-17 13:36:38,743 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:38,798 - INFO - Added document 37: apollo_11_a11transcript_tec_textract_full_text_chunk_0036
+2026-05-17 13:36:39,753 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:39,837 - INFO - Added document 38: apollo_11_a11transcript_tec_textract_full_text_chunk_0037
+2026-05-17 13:36:40,758 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:40,839 - INFO - Added document 39: apollo_11_a11transcript_tec_textract_full_text_chunk_0038
+2026-05-17 13:36:41,733 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:41,826 - INFO - Added document 40: apollo_11_a11transcript_tec_textract_full_text_chunk_0039
+2026-05-17 13:36:42,986 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:43,046 - INFO - Added document 41: apollo_11_a11transcript_tec_textract_full_text_chunk_0040
+2026-05-17 13:36:43,930 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:43,990 - INFO - Added document 42: apollo_11_a11transcript_tec_textract_full_text_chunk_0041
+2026-05-17 13:36:44,788 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:44,860 - INFO - Added document 43: apollo_11_a11transcript_tec_textract_full_text_chunk_0042
+2026-05-17 13:36:46,001 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:46,025 - INFO - Added document 44: apollo_11_a11transcript_tec_textract_full_text_chunk_0043
+2026-05-17 13:36:46,939 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:47,013 - INFO - Added document 45: apollo_11_a11transcript_tec_textract_full_text_chunk_0044
+2026-05-17 13:36:47,913 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:48,091 - INFO - Added document 46: apollo_11_a11transcript_tec_textract_full_text_chunk_0045
+2026-05-17 13:36:48,998 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:49,095 - INFO - Added document 47: apollo_11_a11transcript_tec_textract_full_text_chunk_0046
+2026-05-17 13:36:49,965 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:50,036 - INFO - Added document 48: apollo_11_a11transcript_tec_textract_full_text_chunk_0047
+2026-05-17 13:36:51,008 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:51,099 - INFO - Added document 49: apollo_11_a11transcript_tec_textract_full_text_chunk_0048
+2026-05-17 13:36:51,928 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:51,984 - INFO - Added document 50: apollo_11_a11transcript_tec_textract_full_text_chunk_0049
+2026-05-17 13:36:52,840 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:52,902 - INFO - Added document 51: apollo_11_a11transcript_tec_textract_full_text_chunk_0050
+2026-05-17 13:36:53,871 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:53,940 - INFO - Added document 52: apollo_11_a11transcript_tec_textract_full_text_chunk_0051
+2026-05-17 13:36:55,005 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:55,049 - INFO - Added document 53: apollo_11_a11transcript_tec_textract_full_text_chunk_0052
+2026-05-17 13:36:55,954 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:56,008 - INFO - Added document 54: apollo_11_a11transcript_tec_textract_full_text_chunk_0053
+2026-05-17 13:36:58,369 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:58,446 - INFO - Added document 55: apollo_11_a11transcript_tec_textract_full_text_chunk_0054
+2026-05-17 13:36:59,356 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:36:59,400 - INFO - Added document 56: apollo_11_a11transcript_tec_textract_full_text_chunk_0055
+2026-05-17 13:37:00,401 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:00,477 - INFO - Added document 57: apollo_11_a11transcript_tec_textract_full_text_chunk_0056
+2026-05-17 13:37:01,379 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:01,447 - INFO - Added document 58: apollo_11_a11transcript_tec_textract_full_text_chunk_0057
+2026-05-17 13:37:02,390 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:02,443 - INFO - Added document 59: apollo_11_a11transcript_tec_textract_full_text_chunk_0058
+2026-05-17 13:37:03,374 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:03,439 - INFO - Added document 60: apollo_11_a11transcript_tec_textract_full_text_chunk_0059
+2026-05-17 13:37:04,309 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:04,404 - INFO - Added document 61: apollo_11_a11transcript_tec_textract_full_text_chunk_0060
+2026-05-17 13:37:05,201 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:05,282 - INFO - Added document 62: apollo_11_a11transcript_tec_textract_full_text_chunk_0061
+2026-05-17 13:37:06,260 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:06,339 - INFO - Added document 63: apollo_11_a11transcript_tec_textract_full_text_chunk_0062
+2026-05-17 13:37:07,270 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:07,346 - INFO - Added document 64: apollo_11_a11transcript_tec_textract_full_text_chunk_0063
+2026-05-17 13:37:08,184 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:08,249 - INFO - Added document 65: apollo_11_a11transcript_tec_textract_full_text_chunk_0064
+2026-05-17 13:37:09,089 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:09,185 - INFO - Added document 66: apollo_11_a11transcript_tec_textract_full_text_chunk_0065
+2026-05-17 13:37:10,051 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:10,115 - INFO - Added document 67: apollo_11_a11transcript_tec_textract_full_text_chunk_0066
+2026-05-17 13:37:11,030 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:11,102 - INFO - Added document 68: apollo_11_a11transcript_tec_textract_full_text_chunk_0067
+2026-05-17 13:37:12,011 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:12,064 - INFO - Added document 69: apollo_11_a11transcript_tec_textract_full_text_chunk_0068
+2026-05-17 13:37:12,922 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:12,986 - INFO - Added document 70: apollo_11_a11transcript_tec_textract_full_text_chunk_0069
+2026-05-17 13:37:13,989 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:14,046 - INFO - Added document 71: apollo_11_a11transcript_tec_textract_full_text_chunk_0070
+2026-05-17 13:37:14,869 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:14,951 - INFO - Added document 72: apollo_11_a11transcript_tec_textract_full_text_chunk_0071
+2026-05-17 13:37:15,802 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:15,869 - INFO - Added document 73: apollo_11_a11transcript_tec_textract_full_text_chunk_0072
+2026-05-17 13:37:16,704 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:16,780 - INFO - Added document 74: apollo_11_a11transcript_tec_textract_full_text_chunk_0073
+2026-05-17 13:37:17,677 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:17,744 - INFO - Added document 75: apollo_11_a11transcript_tec_textract_full_text_chunk_0074
+2026-05-17 13:37:18,719 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:18,792 - INFO - Added document 76: apollo_11_a11transcript_tec_textract_full_text_chunk_0075
+2026-05-17 13:37:20,196 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:20,274 - INFO - Added document 77: apollo_11_a11transcript_tec_textract_full_text_chunk_0076
+2026-05-17 13:37:21,244 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:21,323 - INFO - Added document 78: apollo_11_a11transcript_tec_textract_full_text_chunk_0077
+2026-05-17 13:37:22,234 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:22,297 - INFO - Added document 79: apollo_11_a11transcript_tec_textract_full_text_chunk_0078
+2026-05-17 13:37:23,228 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:23,299 - INFO - Added document 80: apollo_11_a11transcript_tec_textract_full_text_chunk_0079
+2026-05-17 13:37:24,131 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:24,172 - INFO - Added document 81: apollo_11_a11transcript_tec_textract_full_text_chunk_0080
+2026-05-17 13:37:25,101 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:25,176 - INFO - Added document 82: apollo_11_a11transcript_tec_textract_full_text_chunk_0081
+2026-05-17 13:37:26,057 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:26,135 - INFO - Added document 83: apollo_11_a11transcript_tec_textract_full_text_chunk_0082
+2026-05-17 13:37:27,037 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:27,101 - INFO - Added document 84: apollo_11_a11transcript_tec_textract_full_text_chunk_0083
+2026-05-17 13:37:27,974 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:28,085 - INFO - Added document 85: apollo_11_a11transcript_tec_textract_full_text_chunk_0084
+2026-05-17 13:37:28,993 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:29,037 - INFO - Added document 86: apollo_11_a11transcript_tec_textract_full_text_chunk_0085
+2026-05-17 13:37:29,928 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:29,985 - INFO - Added document 87: apollo_11_a11transcript_tec_textract_full_text_chunk_0086
+2026-05-17 13:37:30,840 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:30,911 - INFO - Added document 88: apollo_11_a11transcript_tec_textract_full_text_chunk_0087
+2026-05-17 13:37:31,854 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:31,932 - INFO - Added document 89: apollo_11_a11transcript_tec_textract_full_text_chunk_0088
+2026-05-17 13:37:32,778 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:32,832 - INFO - Added document 90: apollo_11_a11transcript_tec_textract_full_text_chunk_0089
+2026-05-17 13:37:33,677 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:33,730 - INFO - Added document 91: apollo_11_a11transcript_tec_textract_full_text_chunk_0090
+2026-05-17 13:37:34,600 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:34,657 - INFO - Added document 92: apollo_11_a11transcript_tec_textract_full_text_chunk_0091
+2026-05-17 13:37:35,502 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:35,574 - INFO - Added document 93: apollo_11_a11transcript_tec_textract_full_text_chunk_0092
+2026-05-17 13:37:36,482 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:36,545 - INFO - Added document 94: apollo_11_a11transcript_tec_textract_full_text_chunk_0093
+2026-05-17 13:37:37,354 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:37,430 - INFO - Added document 95: apollo_11_a11transcript_tec_textract_full_text_chunk_0094
+2026-05-17 13:37:38,240 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:38,326 - INFO - Added document 96: apollo_11_a11transcript_tec_textract_full_text_chunk_0095
+2026-05-17 13:37:39,163 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:39,261 - INFO - Added document 97: apollo_11_a11transcript_tec_textract_full_text_chunk_0096
+2026-05-17 13:37:40,186 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:40,258 - INFO - Added document 98: apollo_11_a11transcript_tec_textract_full_text_chunk_0097
+2026-05-17 13:37:41,171 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:37:41,241 - INFO - Added document 99: apollo_11_a11transcript_tec_textract_full_text_chunk_0098
+2026-05-17 13:37:42,094 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:07,278 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:38:08,666 - INFO - Starting text data processing with update mode: skip
+2026-05-17 13:38:08,668 - INFO - No standard mission folders found. Scanning recursively: data_small\apollo13
+2026-05-17 13:38:08,669 - INFO - Total text files to process: 1
+2026-05-17 13:38:08,669 - INFO - Files by mission:
+2026-05-17 13:38:08,670 - INFO -   apollo_13: 1 files
+2026-05-17 13:38:08,670 - INFO - Processing file: data_small\apollo13\AS13_TEC_textract_full_text.txt
+2026-05-17 13:38:12,443 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:12,531 - INFO - Added document 1: apollo_13_as13_tec_textract_full_text_chunk_0000
+2026-05-17 13:38:13,556 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:13,638 - INFO - Added document 2: apollo_13_as13_tec_textract_full_text_chunk_0001
+2026-05-17 13:38:14,598 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:14,690 - INFO - Added document 3: apollo_13_as13_tec_textract_full_text_chunk_0002
+2026-05-17 13:38:15,715 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:15,783 - INFO - Added document 4: apollo_13_as13_tec_textract_full_text_chunk_0003
+2026-05-17 13:38:16,684 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:16,750 - INFO - Added document 5: apollo_13_as13_tec_textract_full_text_chunk_0004
+2026-05-17 13:38:17,687 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:17,763 - INFO - Added document 6: apollo_13_as13_tec_textract_full_text_chunk_0005
+2026-05-17 13:38:18,776 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:18,841 - INFO - Added document 7: apollo_13_as13_tec_textract_full_text_chunk_0006
+2026-05-17 13:38:20,112 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:20,184 - INFO - Added document 8: apollo_13_as13_tec_textract_full_text_chunk_0007
+2026-05-17 13:38:21,220 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:21,292 - INFO - Added document 9: apollo_13_as13_tec_textract_full_text_chunk_0008
+2026-05-17 13:38:22,405 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:22,462 - INFO - Added document 10: apollo_13_as13_tec_textract_full_text_chunk_0009
+2026-05-17 13:38:23,466 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:23,522 - INFO - Added document 11: apollo_13_as13_tec_textract_full_text_chunk_0010
+2026-05-17 13:38:24,449 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:24,494 - INFO - Added document 12: apollo_13_as13_tec_textract_full_text_chunk_0011
+2026-05-17 13:38:25,427 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:25,503 - INFO - Added document 13: apollo_13_as13_tec_textract_full_text_chunk_0012
+2026-05-17 13:38:26,447 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:26,526 - INFO - Added document 14: apollo_13_as13_tec_textract_full_text_chunk_0013
+2026-05-17 13:38:27,752 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:28,107 - INFO - Added document 15: apollo_13_as13_tec_textract_full_text_chunk_0014
+2026-05-17 13:38:29,390 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:29,470 - INFO - Added document 16: apollo_13_as13_tec_textract_full_text_chunk_0015
+2026-05-17 13:38:30,469 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:30,531 - INFO - Added document 17: apollo_13_as13_tec_textract_full_text_chunk_0016
+2026-05-17 13:38:32,539 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:32,609 - INFO - Added document 18: apollo_13_as13_tec_textract_full_text_chunk_0017
+2026-05-17 13:38:33,581 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:33,644 - INFO - Added document 19: apollo_13_as13_tec_textract_full_text_chunk_0018
+2026-05-17 13:38:34,590 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:34,762 - INFO - Added document 20: apollo_13_as13_tec_textract_full_text_chunk_0019
+2026-05-17 13:38:35,740 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:35,805 - INFO - Added document 21: apollo_13_as13_tec_textract_full_text_chunk_0020
+2026-05-17 13:38:36,747 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:36,847 - INFO - Added document 22: apollo_13_as13_tec_textract_full_text_chunk_0021
+2026-05-17 13:38:37,863 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:37,922 - INFO - Added document 23: apollo_13_as13_tec_textract_full_text_chunk_0022
+2026-05-17 13:38:38,952 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:39,022 - INFO - Added document 24: apollo_13_as13_tec_textract_full_text_chunk_0023
+2026-05-17 13:38:39,962 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:40,024 - INFO - Added document 25: apollo_13_as13_tec_textract_full_text_chunk_0024
+2026-05-17 13:38:40,934 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:40,996 - INFO - Added document 26: apollo_13_as13_tec_textract_full_text_chunk_0025
+2026-05-17 13:38:41,896 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:41,995 - INFO - Added document 27: apollo_13_as13_tec_textract_full_text_chunk_0026
+2026-05-17 13:38:42,976 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:43,127 - INFO - Added document 28: apollo_13_as13_tec_textract_full_text_chunk_0027
+2026-05-17 13:38:44,143 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:44,267 - INFO - Added document 29: apollo_13_as13_tec_textract_full_text_chunk_0028
+2026-05-17 13:38:45,274 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:45,339 - INFO - Added document 30: apollo_13_as13_tec_textract_full_text_chunk_0029
+2026-05-17 13:38:46,457 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:46,527 - INFO - Added document 31: apollo_13_as13_tec_textract_full_text_chunk_0030
+2026-05-17 13:38:47,550 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:47,628 - INFO - Added document 32: apollo_13_as13_tec_textract_full_text_chunk_0031
+2026-05-17 13:38:48,573 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:48,640 - INFO - Added document 33: apollo_13_as13_tec_textract_full_text_chunk_0032
+2026-05-17 13:38:50,529 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:50,636 - INFO - Added document 34: apollo_13_as13_tec_textract_full_text_chunk_0033
+2026-05-17 13:38:51,730 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:51,799 - INFO - Added document 35: apollo_13_as13_tec_textract_full_text_chunk_0034
+2026-05-17 13:38:52,954 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:53,003 - INFO - Added document 36: apollo_13_as13_tec_textract_full_text_chunk_0035
+2026-05-17 13:38:54,023 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:54,132 - INFO - Added document 37: apollo_13_as13_tec_textract_full_text_chunk_0036
+2026-05-17 13:38:55,079 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:55,146 - INFO - Added document 38: apollo_13_as13_tec_textract_full_text_chunk_0037
+2026-05-17 13:38:57,152 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:57,256 - INFO - Added document 39: apollo_13_as13_tec_textract_full_text_chunk_0038
+2026-05-17 13:38:58,336 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:58,417 - INFO - Added document 40: apollo_13_as13_tec_textract_full_text_chunk_0039
+2026-05-17 13:38:59,421 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:38:59,494 - INFO - Added document 41: apollo_13_as13_tec_textract_full_text_chunk_0040
+2026-05-17 13:39:00,781 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:00,853 - INFO - Added document 42: apollo_13_as13_tec_textract_full_text_chunk_0041
+2026-05-17 13:39:01,752 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:01,821 - INFO - Added document 43: apollo_13_as13_tec_textract_full_text_chunk_0042
+2026-05-17 13:39:02,765 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:02,822 - INFO - Added document 44: apollo_13_as13_tec_textract_full_text_chunk_0043
+2026-05-17 13:39:03,780 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:03,847 - INFO - Added document 45: apollo_13_as13_tec_textract_full_text_chunk_0044
+2026-05-17 13:39:05,257 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:05,333 - INFO - Added document 46: apollo_13_as13_tec_textract_full_text_chunk_0045
+2026-05-17 13:39:06,667 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:06,761 - INFO - Added document 47: apollo_13_as13_tec_textract_full_text_chunk_0046
+2026-05-17 13:39:07,673 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:07,741 - INFO - Added document 48: apollo_13_as13_tec_textract_full_text_chunk_0047
+2026-05-17 13:39:08,691 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:08,758 - INFO - Added document 49: apollo_13_as13_tec_textract_full_text_chunk_0048
+2026-05-17 13:39:09,711 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:09,812 - INFO - Added document 50: apollo_13_as13_tec_textract_full_text_chunk_0049
+2026-05-17 13:39:10,786 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:10,851 - INFO - Added document 51: apollo_13_as13_tec_textract_full_text_chunk_0050
+2026-05-17 13:39:11,764 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:11,823 - INFO - Added document 52: apollo_13_as13_tec_textract_full_text_chunk_0051
+2026-05-17 13:39:12,831 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:12,885 - INFO - Added document 53: apollo_13_as13_tec_textract_full_text_chunk_0052
+2026-05-17 13:39:13,883 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:13,944 - INFO - Added document 54: apollo_13_as13_tec_textract_full_text_chunk_0053
+2026-05-17 13:39:14,900 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:14,953 - INFO - Added document 55: apollo_13_as13_tec_textract_full_text_chunk_0054
+2026-05-17 13:39:15,964 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:16,017 - INFO - Added document 56: apollo_13_as13_tec_textract_full_text_chunk_0055
+2026-05-17 13:39:17,104 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:17,165 - INFO - Added document 57: apollo_13_as13_tec_textract_full_text_chunk_0056
+2026-05-17 13:39:18,050 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:18,125 - INFO - Added document 58: apollo_13_as13_tec_textract_full_text_chunk_0057
+2026-05-17 13:39:19,136 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:19,158 - INFO - Added document 59: apollo_13_as13_tec_textract_full_text_chunk_0058
+2026-05-17 13:39:20,153 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:20,219 - INFO - Added document 60: apollo_13_as13_tec_textract_full_text_chunk_0059
+2026-05-17 13:39:21,231 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:21,282 - INFO - Added document 61: apollo_13_as13_tec_textract_full_text_chunk_0060
+2026-05-17 13:39:22,237 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:22,314 - INFO - Added document 62: apollo_13_as13_tec_textract_full_text_chunk_0061
+2026-05-17 13:39:23,262 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:23,323 - INFO - Added document 63: apollo_13_as13_tec_textract_full_text_chunk_0062
+2026-05-17 13:39:24,229 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:24,302 - INFO - Added document 64: apollo_13_as13_tec_textract_full_text_chunk_0063
+2026-05-17 13:39:25,245 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:25,322 - INFO - Added document 65: apollo_13_as13_tec_textract_full_text_chunk_0064
+2026-05-17 13:39:26,896 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:26,958 - INFO - Added document 66: apollo_13_as13_tec_textract_full_text_chunk_0065
+2026-05-17 13:39:28,336 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:28,392 - INFO - Added document 67: apollo_13_as13_tec_textract_full_text_chunk_0066
+2026-05-17 13:39:29,483 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:29,545 - INFO - Added document 68: apollo_13_as13_tec_textract_full_text_chunk_0067
+2026-05-17 13:39:30,676 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:30,731 - INFO - Added document 69: apollo_13_as13_tec_textract_full_text_chunk_0068
+2026-05-17 13:39:31,658 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:31,717 - INFO - Added document 70: apollo_13_as13_tec_textract_full_text_chunk_0069
+2026-05-17 13:39:32,722 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:32,781 - INFO - Added document 71: apollo_13_as13_tec_textract_full_text_chunk_0070
+2026-05-17 13:39:33,772 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:33,823 - INFO - Added document 72: apollo_13_as13_tec_textract_full_text_chunk_0071
+2026-05-17 13:39:34,942 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:35,096 - INFO - Added document 73: apollo_13_as13_tec_textract_full_text_chunk_0072
+2026-05-17 13:39:36,149 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:36,283 - INFO - Added document 74: apollo_13_as13_tec_textract_full_text_chunk_0073
+2026-05-17 13:39:37,335 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:37,409 - INFO - Added document 75: apollo_13_as13_tec_textract_full_text_chunk_0074
+2026-05-17 13:39:38,458 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:38,529 - INFO - Added document 76: apollo_13_as13_tec_textract_full_text_chunk_0075
+2026-05-17 13:39:39,627 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:39,702 - INFO - Added document 77: apollo_13_as13_tec_textract_full_text_chunk_0076
+2026-05-17 13:39:40,770 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:40,834 - INFO - Added document 78: apollo_13_as13_tec_textract_full_text_chunk_0077
+2026-05-17 13:39:41,865 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:41,966 - INFO - Added document 79: apollo_13_as13_tec_textract_full_text_chunk_0078
+2026-05-17 13:39:43,079 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:43,130 - INFO - Added document 80: apollo_13_as13_tec_textract_full_text_chunk_0079
+2026-05-17 13:39:44,199 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:44,293 - INFO - Added document 81: apollo_13_as13_tec_textract_full_text_chunk_0080
+2026-05-17 13:39:45,343 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:45,432 - INFO - Added document 82: apollo_13_as13_tec_textract_full_text_chunk_0081
+2026-05-17 13:39:46,531 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:46,594 - INFO - Added document 83: apollo_13_as13_tec_textract_full_text_chunk_0082
+2026-05-17 13:39:47,645 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:47,705 - INFO - Added document 84: apollo_13_as13_tec_textract_full_text_chunk_0083
+2026-05-17 13:39:48,869 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:48,938 - INFO - Added document 85: apollo_13_as13_tec_textract_full_text_chunk_0084
+2026-05-17 13:39:50,499 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:50,559 - INFO - Added document 86: apollo_13_as13_tec_textract_full_text_chunk_0085
+2026-05-17 13:39:51,579 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:51,760 - INFO - Added document 87: apollo_13_as13_tec_textract_full_text_chunk_0086
+2026-05-17 13:39:52,827 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:52,954 - INFO - Added document 88: apollo_13_as13_tec_textract_full_text_chunk_0087
+2026-05-17 13:39:54,066 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:54,190 - INFO - Added document 89: apollo_13_as13_tec_textract_full_text_chunk_0088
+2026-05-17 13:39:55,429 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:55,558 - INFO - Added document 90: apollo_13_as13_tec_textract_full_text_chunk_0089
+2026-05-17 13:39:56,716 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:56,778 - INFO - Added document 91: apollo_13_as13_tec_textract_full_text_chunk_0090
+2026-05-17 13:39:57,897 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:57,957 - INFO - Added document 92: apollo_13_as13_tec_textract_full_text_chunk_0091
+2026-05-17 13:39:58,980 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:39:59,026 - INFO - Added document 93: apollo_13_as13_tec_textract_full_text_chunk_0092
+2026-05-17 13:40:00,142 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:00,208 - INFO - Added document 94: apollo_13_as13_tec_textract_full_text_chunk_0093
+2026-05-17 13:40:01,224 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:01,294 - INFO - Added document 95: apollo_13_as13_tec_textract_full_text_chunk_0094
+2026-05-17 13:40:02,388 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:02,460 - INFO - Added document 96: apollo_13_as13_tec_textract_full_text_chunk_0095
+2026-05-17 13:40:04,001 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:04,071 - INFO - Added document 97: apollo_13_as13_tec_textract_full_text_chunk_0096
+2026-05-17 13:40:05,559 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:05,647 - INFO - Added document 98: apollo_13_as13_tec_textract_full_text_chunk_0097
+2026-05-17 13:40:06,709 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:06,905 - INFO - Added document 99: apollo_13_as13_tec_textract_full_text_chunk_0098
+2026-05-17 13:40:07,936 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:21,789 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:40:22,588 - INFO - Starting text data processing with update mode: skip
+2026-05-17 13:40:22,590 - INFO - No standard mission folders found. Scanning recursively: data_small\challenger
+2026-05-17 13:40:22,590 - INFO - Total text files to process: 1
+2026-05-17 13:40:22,591 - INFO - Files by mission:
+2026-05-17 13:40:22,591 - INFO -   challenger: 1 files
+2026-05-17 13:40:22,591 - INFO - Processing file: data_small\challenger\107-AAG_STS-51L_Mission_Audio_transcript.txt
+2026-05-17 13:40:24,870 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:24,976 - INFO - Added document 1: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0000
+2026-05-17 13:40:25,767 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:25,835 - INFO - Added document 2: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0001
+2026-05-17 13:40:26,623 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:26,673 - INFO - Added document 3: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0002
+2026-05-17 13:40:27,533 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:27,591 - INFO - Added document 4: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0003
+2026-05-17 13:40:28,405 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:28,476 - INFO - Added document 5: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0004
+2026-05-17 13:40:29,219 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:29,266 - INFO - Added document 6: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0005
+2026-05-17 13:40:30,087 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:30,160 - INFO - Added document 7: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0006
+2026-05-17 13:40:30,951 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:31,006 - INFO - Added document 8: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0007
+2026-05-17 13:40:32,204 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:32,260 - INFO - Added document 9: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0008
+2026-05-17 13:40:33,090 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:33,165 - INFO - Added document 10: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0009
+2026-05-17 13:40:41,359 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:41,427 - INFO - Added document 11: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0010
+2026-05-17 13:40:42,264 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:42,331 - INFO - Added document 12: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0011
+2026-05-17 13:40:43,099 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:43,150 - INFO - Added document 13: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0012
+2026-05-17 13:40:43,986 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:44,046 - INFO - Added document 14: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0013
+2026-05-17 13:40:44,814 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:44,890 - INFO - Added document 15: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0014
+2026-05-17 13:40:45,767 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:45,923 - INFO - Added document 16: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0015
+2026-05-17 13:40:46,742 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:46,806 - INFO - Added document 17: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0016
+2026-05-17 13:40:47,607 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:47,637 - INFO - Added document 18: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0017
+2026-05-17 13:40:48,403 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:48,455 - INFO - Added document 19: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0018
+2026-05-17 13:40:49,325 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:49,397 - INFO - Added document 20: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0019
+2026-05-17 13:40:50,316 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:50,417 - INFO - Added document 21: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0020
+2026-05-17 13:40:51,196 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:51,249 - INFO - Added document 22: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0021
+2026-05-17 13:40:52,048 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:52,125 - INFO - Added document 23: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0022
+2026-05-17 13:40:52,985 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:53,058 - INFO - Added document 24: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0023
+2026-05-17 13:40:53,800 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:53,863 - INFO - Added document 25: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0024
+2026-05-17 13:40:54,668 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:54,870 - INFO - Added document 26: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0025
+2026-05-17 13:40:55,699 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:55,780 - INFO - Added document 27: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0026
+2026-05-17 13:40:56,599 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:56,672 - INFO - Added document 28: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0027
+2026-05-17 13:40:57,572 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:57,609 - INFO - Added document 29: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0028
+2026-05-17 13:40:58,407 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:58,475 - INFO - Added document 30: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0029
+2026-05-17 13:40:59,431 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:40:59,504 - INFO - Added document 31: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0030
+2026-05-17 13:41:00,355 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:00,428 - INFO - Added document 32: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0031
+2026-05-17 13:41:01,231 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:01,296 - INFO - Added document 33: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0032
+2026-05-17 13:41:02,135 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:02,210 - INFO - Added document 34: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0033
+2026-05-17 13:41:03,044 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:03,125 - INFO - Added document 35: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0034
+2026-05-17 13:41:03,977 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:04,057 - INFO - Added document 36: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0035
+2026-05-17 13:41:04,793 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:04,867 - INFO - Added document 37: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0036
+2026-05-17 13:41:05,764 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:05,847 - INFO - Added document 38: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0037
+2026-05-17 13:41:06,685 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:06,718 - INFO - Added document 39: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0038
+2026-05-17 13:41:07,528 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:07,607 - INFO - Added document 40: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0039
+2026-05-17 13:41:08,346 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:08,411 - INFO - Added document 41: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0040
+2026-05-17 13:41:09,276 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:09,341 - INFO - Added document 42: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0041
+2026-05-17 13:41:10,114 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:10,190 - INFO - Added document 43: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0042
+2026-05-17 13:41:11,009 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:11,059 - INFO - Added document 44: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0043
+2026-05-17 13:41:12,641 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:12,707 - INFO - Added document 45: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0044
+2026-05-17 13:41:13,512 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:13,572 - INFO - Added document 46: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0045
+2026-05-17 13:41:14,294 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:14,354 - INFO - Added document 47: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0046
+2026-05-17 13:41:15,186 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:15,256 - INFO - Added document 48: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0047
+2026-05-17 13:41:16,060 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:16,126 - INFO - Added document 49: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0048
+2026-05-17 13:41:17,038 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:17,115 - INFO - Added document 50: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0049
+2026-05-17 13:41:18,076 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:18,151 - INFO - Added document 51: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0050
+2026-05-17 13:41:18,944 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:19,041 - INFO - Added document 52: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0051
+2026-05-17 13:41:19,813 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:19,901 - INFO - Added document 53: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0052
+2026-05-17 13:41:20,744 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:20,895 - INFO - Added document 54: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0053
+2026-05-17 13:41:21,724 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:21,983 - INFO - Added document 55: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0054
+2026-05-17 13:41:26,868 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:27,037 - INFO - Added document 56: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0055
+2026-05-17 13:41:27,822 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:27,891 - INFO - Added document 57: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0056
+2026-05-17 13:41:28,888 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:29,282 - INFO - Added document 58: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0057
+2026-05-17 13:41:30,204 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:30,275 - INFO - Added document 59: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0058
+2026-05-17 13:41:31,107 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:31,179 - INFO - Added document 60: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0059
+2026-05-17 13:41:32,143 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:32,163 - INFO - Added document 61: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0060
+2026-05-17 13:41:32,941 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:33,013 - INFO - Added document 62: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0061
+2026-05-17 13:41:33,736 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:33,802 - INFO - Added document 63: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0062
+2026-05-17 13:41:34,876 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:34,898 - INFO - Added document 64: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0063
+2026-05-17 13:41:35,690 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:35,768 - INFO - Added document 65: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0064
+2026-05-17 13:41:36,674 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:36,752 - INFO - Added document 66: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0065
+2026-05-17 13:41:38,645 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:38,697 - INFO - Added document 67: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0066
+2026-05-17 13:41:39,486 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:39,555 - INFO - Added document 68: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0067
+2026-05-17 13:41:40,411 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:40,484 - INFO - Added document 69: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0068
+2026-05-17 13:41:41,271 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:41,335 - INFO - Added document 70: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0069
+2026-05-17 13:41:42,200 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:42,266 - INFO - Added document 71: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0070
+2026-05-17 13:41:43,129 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:43,192 - INFO - Added document 72: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0071
+2026-05-17 13:41:44,056 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:44,117 - INFO - Added document 73: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0072
+2026-05-17 13:41:45,003 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:45,046 - INFO - Added document 74: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0073
+2026-05-17 13:41:45,790 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:45,875 - INFO - Added document 75: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0074
+2026-05-17 13:41:46,678 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:46,831 - INFO - Added document 76: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0075
+2026-05-17 13:41:47,701 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:47,757 - INFO - Added document 77: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0076
+2026-05-17 13:41:48,516 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:48,582 - INFO - Added document 78: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0077
+2026-05-17 13:41:49,372 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:49,425 - INFO - Added document 79: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0078
+2026-05-17 13:41:50,261 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:50,322 - INFO - Added document 80: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0079
+2026-05-17 13:41:51,036 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:51,098 - INFO - Added document 81: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0080
+2026-05-17 13:41:51,869 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:51,934 - INFO - Added document 82: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0081
+2026-05-17 13:41:52,735 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:52,807 - INFO - Added document 83: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0082
+2026-05-17 13:41:53,628 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:53,714 - INFO - Added document 84: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0083
+2026-05-17 13:41:54,563 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:54,646 - INFO - Added document 85: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0084
+2026-05-17 13:41:55,531 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:55,609 - INFO - Added document 86: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0085
+2026-05-17 13:41:56,434 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:56,528 - INFO - Added document 87: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0086
+2026-05-17 13:41:57,356 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:57,443 - INFO - Added document 88: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0087
+2026-05-17 13:41:58,381 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:58,459 - INFO - Added document 89: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0088
+2026-05-17 13:41:59,346 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:41:59,405 - INFO - Added document 90: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0089
+2026-05-17 13:42:00,170 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:42:00,232 - INFO - Added document 91: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0090
+2026-05-17 13:42:01,025 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:42:01,095 - INFO - Added document 92: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0091
+2026-05-17 13:42:02,049 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:42:02,118 - INFO - Added document 93: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0092
+2026-05-17 13:42:02,973 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:42:03,043 - INFO - Added document 94: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0093
+2026-05-17 13:42:03,983 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:42:04,022 - INFO - Added document 95: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0094
+2026-05-17 13:42:04,836 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:42:04,940 - INFO - Added document 96: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0095
+2026-05-17 13:42:05,719 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:42:05,788 - INFO - Added document 97: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0096
+2026-05-17 13:42:06,556 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:42:06,725 - INFO - Added document 98: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0097
+2026-05-17 13:42:07,714 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:42:07,845 - INFO - Added document 99: challenger_107_aag_sts_51l_mission_audio_transcript_chunk_0098
+2026-05-17 13:42:08,623 - INFO - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-17 13:42:34,693 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:42:35,665 - INFO - Collection Statistics:
+2026-05-17 13:42:35,741 - INFO - total_documents: 99
+2026-05-17 13:42:35,742 - INFO - missions: {'apollo_11': 99}
+2026-05-17 13:42:35,742 - INFO - data_types: {'transcript': 99}
+2026-05-17 13:42:35,742 - INFO - document_categories: {'technical': 99}
+2026-05-17 13:42:35,743 - INFO - file_types: {'text': 99}
+2026-05-17 13:42:51,472 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:42:52,662 - INFO - Collection Statistics:
+2026-05-17 13:42:52,734 - INFO - total_documents: 99
+2026-05-17 13:42:52,734 - INFO - missions: {'apollo_13': 99}
+2026-05-17 13:42:52,735 - INFO - data_types: {'textract_extracted': 99}
+2026-05-17 13:42:52,735 - INFO - document_categories: {'technical': 99}
+2026-05-17 13:42:52,736 - INFO - file_types: {'text': 99}
+2026-05-17 13:43:10,195 - INFO - Initializing ChromaDB Embedding Pipeline...
+2026-05-17 13:43:11,325 - INFO - Collection Statistics:
+2026-05-17 13:43:11,367 - INFO - total_documents: 99
+2026-05-17 13:43:11,368 - INFO - missions: {'challenger': 99}
+2026-05-17 13:43:11,368 - INFO - data_types: {'transcript': 99}
+2026-05-17 13:43:11,368 - INFO - document_categories: {'mission_audio': 99}
+2026-05-17 13:43:11,369 - INFO - file_types: {'text': 99}

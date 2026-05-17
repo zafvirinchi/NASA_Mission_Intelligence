@@ -14,17 +14,34 @@ def generate_response(openai_key: str, user_message: str, context: str,
     if not openai_key:
         return "OpenAI API key is missing."
 
+    base_url = "https://openai.vocareum.com/v1" if openai_key.startswith("voc") else None
+
     client = OpenAI(
         api_key=openai_key,
-        base_url="https://openai.vocareum.com/v1"
+        base_url=base_url
     )
 
     system_prompt = """
-You are a NASA mission intelligence assistant.
-Answer questions only using the provided NASA mission context.
-If the context does not contain enough information, say that the available context is insufficient.
-Be accurate, clear, and cite source names when available in the context.
-"""
+    You are a NASA mission intelligence assistant and NASA mission expert.
+
+    Rules:
+    - Answer using ONLY the retrieved NASA mission documents provided in the context.
+    - ALWAYS cite the mission name and source document name when referencing facts.
+    - NEVER say generic citations like "Source 1" or "Source 2".
+    - Use citations naturally in sentences.
+
+    Good citation example:
+    "According to the Apollo 11 technical transcript a11transcript_tec_textract_full_text.txt..."
+
+    Another example:
+    "The Apollo 13 mission report states that the oxygen tank explosion caused major electrical failures."
+
+    - If the context does not contain enough information, say:
+    "I don't have sufficient information in the provided documents."
+
+    - Do not invent facts or citations.
+    - Be precise and technical.
+    """
 
     messages = [
         {"role": "system", "content": system_prompt},
