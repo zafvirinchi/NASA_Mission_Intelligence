@@ -333,8 +333,26 @@ When submitting your completed project:
 
 $env:OPENAI_API_KEY="voc-your-key"
 
-python embedding_pipeline.py --openai-key "$env:OPENAI_API_KEY" --data-path ./data_small --chroma-dir ./chroma_db_openai --collection-name nasa_space_missions_text --chunk-size 3000 --chunk-overlap 100 --update-mode skip
+python embedding_pipeline.py --openai-key $env:OPENAI_API_KEY --chroma-dir ./chroma_db_submission --collection-name nasa_apollo11 --stats-only
+
+python embedding_pipeline.py --openai-key $env:OPENAI_API_KEY --chroma-dir ./chroma_db_submission --collection-name nasa_apollo13 --stats-only
+
+python embedding_pipeline.py --openai-key $env:OPENAI_API_KEY --chroma-dir ./chroma_db_submission --collection-name nasa_challenger --stats-only
 
 streamlit run chat.py --server.fileWatcherType none
 
 Vocareum base URL used: https://openai.vocareum.com/v1
+
+Note:-
+--------
+The project uses separate ChromaDB collections for each mission:
+- nasa_apollo11
+- nasa_apollo13
+- nasa_challenger
+
+The Streamlit app allows the user to select the mission collection before asking a question. 
+Batch evaluation maps each test category to the appropriate mission collection.
+
+
+Run batch evaluation:
+python batch_evaluation.py
